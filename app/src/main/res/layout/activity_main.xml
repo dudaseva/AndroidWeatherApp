@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundclouds"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:text="City"
+        android:textColor="#ACE9E7" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_below="@id/txtCity"
+        android:layout_marginLeft="60sp"
+        android:layout_marginVertical="15sp"
+        android:src="@drawable/sunshinewhite"
+        />
+
+    <TextView
+        android:id="@+id/curr_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="60sp"
+        android:layout_toRightOf="@id/image"
+        android:textColor="#ffffff"
+
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/summaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginBottom="12sp"/>
+
+    <TextView
+        android:id="@+id/max_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summaryText"
+        android:textColor="#ACE9E7"
+        android:text="Max: "
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp" />
+
+    <TextView
+        android:id="@+id/min_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/max_temperature"
+        android:textColor="#ACE9E7"
+        android:text="Min: "
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp"/>
+
+    <TextView
+        android:id="@+id/uvIndex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/min_temperature"
+        android:text="UV index: "
+        android:textColor="#ACE9E7"
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp"/>
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uvIndex"
+        android:text="Humidity: "
+        android:textColor="#ACE9E7"
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp"/>
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/humidity"
+        android:text="Pressure: "
+        android:textColor="#ACE9E7"
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp"/>
+
+    <TextView
+        android:id="@+id/sunrise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pressure"
+        android:text="Sunrise: "
+        android:textColor="#ACE9E7"
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp"/>
+
+    <TextView
+        android:id="@+id/sunset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sunrise"
+        android:text="Sunset: "
+        android:textColor="#ACE9E7"
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp"/>
+
+    <TextView
+        android:id="@+id/precipitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sunset"
+        android:text="Precipitation: "
+        android:textColor="#ACE9E7"
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp"/>
+
+    <TextView
+        android:id="@+id/precipProbability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/precipitation"
+        android:text="Precipitation probability: "
+        android:textColor="#ACE9E7"
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp"/>
+
+
+    <TextView
+        android:id="@+id/windSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/precipProbability"
+        android:text="Wind speed: "
+        android:textColor="#ACE9E7"
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp"/>
+
+    <TextView
+        android:id="@+id/lastUpdated"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/windSpeed"
+        android:text="Last updated: "
+        android:textSize="15sp"
+        android:layout_marginTop="15sp"
+        android:textColor="#ACE9E7"
+        android:layout_marginLeft="25sp"/>
+
+
+
+
+</RelativeLayout>
