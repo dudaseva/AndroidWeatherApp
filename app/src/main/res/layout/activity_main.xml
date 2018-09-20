@@ -7,24 +7,25 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/txtCity"
+    <Spinner
+        android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp"
-        android:text="City"
+        android:text="SpinnerCityChanger"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="80sp"
+        android:layout_marginBottom="15sp"
         android:textColor="#ACE9E7" />
+
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="400px"
-        android:layout_height="400px"
-        android:layout_below="@id/txtCity"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/spinner"
         android:layout_marginLeft="60sp"
         android:layout_marginVertical="15sp"
-        android:src="@drawable/sunshinewhite"
-        />
+        android:src="@drawable/sunshinewhite" />
 
     <TextView
         android:id="@+id/curr_temperature"
@@ -35,15 +36,16 @@
         android:layout_marginTop="60sp"
         android:layout_toRightOf="@id/image"
         android:textColor="#ffffff"
-
+        android:text="current temperature"
         android:textSize="60sp" />
 
     <TextView
         android:id="@+id/summaryText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/image"
         android:layout_centerHorizontal="true"
+        android:text="summary"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:layout_marginLeft="25sp"
@@ -139,7 +141,6 @@
         android:textSize="20sp"
         android:layout_marginLeft="25sp"/>
 
-
     <TextView
         android:id="@+id/windSpeed"
         android:layout_width="match_parent"
@@ -160,8 +161,6 @@
         android:layout_marginTop="15sp"
         android:textColor="#ACE9E7"
         android:layout_marginLeft="25sp"/>
-
-
 
 
 </RelativeLayout>

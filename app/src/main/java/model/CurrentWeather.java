@@ -9,7 +9,6 @@ public class CurrentWeather {
     private Daily daily;
 
     public CurrentWeather() {
-
     }
 
 

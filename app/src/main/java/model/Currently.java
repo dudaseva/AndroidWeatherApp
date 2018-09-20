@@ -2,6 +2,7 @@ package model;
 
 public class Currently {
 
+    private String city;
     private Long time;
     private String summary;
     private String icon;
@@ -13,6 +14,10 @@ public class Currently {
     private double windSpeed;
     private double uvIndex;
 
+
+    public String getCity() { return city; }
+
+    public void setCity(String city) { this.city = city; }
 
     public Long getTime() {
         return time;
@@ -97,7 +102,8 @@ public class Currently {
     @Override
     public String toString() {
         return "Currently{" +
-                "time=" + time +
+                "city='" + city + '\'' +
+                ", time=" + time +
                 ", summary='" + summary + '\'' +
                 ", icon='" + icon + '\'' +
                 ", precipProbability=" + precipProbability +
