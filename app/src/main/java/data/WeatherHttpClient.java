@@ -6,19 +6,16 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-
 import Util.Utils;
 
-public class WeatherHttpClient {
 
+public class WeatherHttpClient {
 
     public String getWeatherData (String place) {
         HttpURLConnection connection = null;
         InputStream inputStream = null;
 
-
         try {
-
             connection = (HttpURLConnection) (new URL(Utils.BASE_URL + place)).openConnection();
             connection.setRequestMethod("GET");
             connection.setDoInput(true);
@@ -39,11 +36,9 @@ public class WeatherHttpClient {
 
             return stringBuffer.toString();
 
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return null;
     }
 }

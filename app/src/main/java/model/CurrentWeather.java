@@ -12,7 +12,7 @@ public class CurrentWeather {
     }
 
 
-    public Double getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
@@ -20,7 +20,7 @@ public class CurrentWeather {
         this.latitude = latitude;
     }
 
-    public Double getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
 

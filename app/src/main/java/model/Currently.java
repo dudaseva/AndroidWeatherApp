@@ -2,22 +2,22 @@ package model;
 
 public class Currently {
 
-    private String city;
-    private Long time;
+//    private String city;
+    private long time;
     private String summary;
     private String icon;
     private double precipProbability;
     private String precipType;
-    private Double temperature;
+    private double temperature;
     private double humidity;
     private double pressure;
     private double windSpeed;
     private double uvIndex;
 
 
-    public String getCity() { return city; }
+//    public String getCity() { return city; }
 
-    public void setCity(String city) { this.city = city; }
+//    public void setCity(String city) { this.city = city; }
 
     public Long getTime() {
         return time;
@@ -47,9 +47,7 @@ public class Currently {
         return precipProbability;
     }
 
-    public void setPrecipProbability(double precipProbability) {
-        this.precipProbability = precipProbability;
-    }
+    public void setPrecipProbability(double precipProbability) { this.precipProbability = precipProbability; }
 
     public String getPrecipType() {
         return precipType;
@@ -102,7 +100,7 @@ public class Currently {
     @Override
     public String toString() {
         return "Currently{" +
-                "city='" + city + '\'' +
+                //"city='" + city + '\'' +
                 ", time=" + time +
                 ", summary='" + summary + '\'' +
                 ", icon='" + icon + '\'' +

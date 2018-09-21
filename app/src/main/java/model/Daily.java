@@ -1,9 +1,6 @@
 package model;
 
-import java.io.FileReader;
 import java.util.ArrayList;
-
-import com.google.gson.Gson;
 
 
 public class Daily {
@@ -18,24 +15,24 @@ public class Daily {
     }
 
     public static class Data {
-        float sunriseTime;
-        float sunsetTime;
+        long sunriseTime;
+        long sunsetTime;
         float temperatureHigh;
         float temperatureLow;
 
-        public float getSunriseTime() {
+        public long getSunriseTime() {
             return sunriseTime;
         }
 
-        public void setSunriseTime(float sunriseTime) {
+        public void setSunriseTime(long sunriseTime) {
             this.sunriseTime = sunriseTime;
         }
 
-        public float getSunsetTime() {
+        public long getSunsetTime() {
             return sunsetTime;
         }
 
-        public void setSunsetTime(float sunsetTime) {
+        public void setSunsetTime(long sunsetTime) {
             this.sunsetTime = sunsetTime;
         }
 
@@ -55,7 +52,6 @@ public class Daily {
             this.temperatureLow = temperatureLow;
         }
     }
-
 }
 
 

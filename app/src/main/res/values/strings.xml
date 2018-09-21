@@ -3,13 +3,13 @@
 
     <string-array name="citiesXml">
         <item>Barcelona</item>
-        <item>Szeged</item>
-        <item>Kecskemét</item>
         <item>Budapest</item>
-        <item>Siófok</item>
-        <item>Hódmezővásárhely</item>
         <item>Debrecen</item>
+        <item>Hódmezővásárhely</item>
         <item>Kecel</item>
+        <item>Kecskemét</item>
         <item>Oslo</item>
+        <item>Siófok</item>
+        <item>Szeged</item>
     </string-array>
 </resources>
